@@ -20,6 +20,6 @@ const john = {
 
 console.log(
   mark.calcBMI() > john.calcBMI()
-    ? `Mark's BMI (${mark.BMI}) is higher than John's (${john.BMI})!`
+    ? `Mark's BMI (${mark.BMI}) is higher than John's (${john.BMI})!` 
     : `John's BMI (${john.BMI}) is higher than Mark's (${mark.BMI})!`
 );
