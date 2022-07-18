@@ -56,3 +56,11 @@ printGoals(...game.scored);
 
 team1 < team2 && console.log("Team 1 is more likly to win");
 team1 > team2 && console.log("Team 2 is more likly to win");
+
+const kaustubh = {
+  salary: 12345678,
+  getSalary() {
+    console.log(this.salary);
+  },
+};
+kaustubh.getSalary();
