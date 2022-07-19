@@ -55,3 +55,12 @@ for (const [key, { open, close }] of Object.entries(obj2.weekends)) {
   };
 }
 console.log(obj3, "new object");
+//set 
+
+new Set(['sadsf','dsvgdfsgbv','v'])
+//maps 
+
+const map = new Map()
+map.set('name','keval panchal')
+map.set(1,'india')
+console.log(map);
