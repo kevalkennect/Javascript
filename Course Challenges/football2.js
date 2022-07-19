@@ -30,7 +30,7 @@ const game = {
     ],
   ],
   score: "4:0",
-  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels", "Hummels"],
   date: "Nov 9th, 2037",
   odds: {
     team1: 1.33,
@@ -54,3 +54,8 @@ for (const [key, value] of Object.entries(game.odds)) {
   const tstr = key === "x" ? "draw" : `victory ${game[key]}`;
   console.log(`Odd of ${tstr}  ${value}`);
 }
+game.scores = {};
+for (const player of game.scored) {
+  game.scores[player] ? game.scores[player]++ : (game.scores[player] = 1);
+}
+console.log(game.scores);
