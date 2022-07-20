@@ -90,8 +90,23 @@
 
 // obj.fn("hii");
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-arr.forEach((el, i, arr) => {
-  console.log(`${i} : ${el} ===> from ${arr}`);
-});
+// // arr.forEach((el, i, arr) => {
+// //   console.log(`${i} : ${el} ===> from ${arr}`);
+// // });
+
+// const newArr = arr.map((el, i) => i * el);
+
+// console.log(newArr);
+
+//computing username
+const str = "Keval Panchal";
+
+const userName = str
+  .toLowerCase()
+  .split(" ")
+  .map((el) => el[0])
+  .join('')
+
+console.log(userName);
