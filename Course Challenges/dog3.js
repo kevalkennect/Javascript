@@ -37,3 +37,6 @@ const checkIfOkay = (dog) =>
 console.log(dogs.some(checkIfOkay));
 
 console.log(dogs.filter(checkIfOkay));
+
+const sort = dogs.sort((a, b) => a.recommendedFood - b.recommendedFood);
+console.log(sort);
