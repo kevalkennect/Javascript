@@ -81,11 +81,17 @@
 
 // newFunction("keval")("keval1")
 
-const obj = {
-  name: "keval",
-  fn: function (str) {
-    console.log(`${str} by ${this.name}`);
-  },
-};
+// const obj = {
+//   name: "keval",
+//   fn: function (str) {
+//     console.log(`${str} by ${this.name}`);
+//   },
+// };
 
-obj.fn("hii");
+// obj.fn("hii");
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+arr.forEach((el, i, arr) => {
+  console.log(`${i} : ${el} ===> from ${arr}`);
+});
