@@ -6,5 +6,8 @@ const calcTip = (value) =>
 for (let index = 0; index < arr.length; index++) {
   tip.push(calcTip(arr[index]));
 }
+
+var tip2 = arr.map((el) => calcTip(el));
+
 // const tip = [calcTip(arr[0]), calcTip(arr[1]), calcTip(arr[2])];
-console.log(tip);
+console.log(tip, tip2);
